@@ -1,0 +1,19 @@
+﻿@model Comment;
+@{
+    Layout = "_LayoutEvent";
+}
+
+<div style="width:80%;margin-left:5%; margin-top:80px;">
+    @using (Html.BeginForm(FormMethod.Post))
+    {
+        <div class="form-group mb-3" style="display:flex;flex-direction:column">
+
+            @Html.LabelFor(model => model.Comment1, htmlAttributes: new { @class = "fs-5" })
+
+            @Html.TextAreaFor(model => model.Comment1, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+        <div class="row mb-5" style="margin-left:5px;">
+            <button type="submit" class="btn btn-success fs-5 ps-5 pe-5 ">SaveComment</button>
+        </div>
+    }
+</div>

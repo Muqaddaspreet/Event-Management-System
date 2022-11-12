@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)\..\..\Lib\Foundation\&quot;" />
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="jQuery" Version="3.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BookReadingEvent.Core">
+      <HintPath>..\..\Lib\Foundation\BookReadingEvent.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

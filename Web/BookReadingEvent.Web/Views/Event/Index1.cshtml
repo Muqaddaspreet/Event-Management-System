@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "_LayoutEvent";
+}
+@section Styles {
+
+    <link href="~/css/Event.css" rel="stylesheet" />
+}
+<div style="align-items:center; border-radius:2px;display:flex;justify-content:center;">
+
+    <div>
+        @if (ViewBag.CommentOfPeople.Count != 0)
+        {
+            @foreach (var e in ViewBag.CommentOfPeople)
+            {
+
+                <div class="card shadow es234CardWrapper" style="width:46%;margin-bottom:10px;float:left; margin-right:10px;">
+                    <div class="card-body">
+                        <h6>Event Title:-&nbsp; @e.EventName</h6>
+                        <h6>comment:-&nbsp;@e.Comment1</h6>
+                        <h6>commented by:-&nbsp; @e.Email</h6>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <h4 style="text-align:center;color:lightgray;">No notifications to display</h4>
+        }
+    </div>
+</div>

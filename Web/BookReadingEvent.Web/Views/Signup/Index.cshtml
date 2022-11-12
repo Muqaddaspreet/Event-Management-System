@@ -1,0 +1,36 @@
+﻿@model SignUp;
+@section Styles {
+
+    <link href="~/css/SignUp.css" rel="stylesheet" />
+}
+<div class="outerdiv">
+    <div class="insidediv" style="background-color:ghostwhite;">
+        <div>
+            <h3>SignUp Page </h3>
+            <hr />
+        </div>
+        <form method="post" asp-action="Index" asp-controller="Signup">
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label validate">First Name</label>
+                <input asp-for="FirstName" class="form-control">
+                <span asp-validation-for="FirstName" style="color:red;"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label validate">Last Name</label>
+                <input asp-for="LastName" class="form-control">
+                <span asp-validation-for="LastName" style="color:red;"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="EmailID" class="form-label validate">Email address</label>
+                <input asp-for="EmailID" class="form-control">
+                <span asp-validation-for="EmailID" style="color:red"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label validate">Password</label>
+                <input asp-for="Password" class="form-control">
+                <span asp-validation-for="Password" style="color:red;"></span>
+            </div>
+            <input type="submit" value="SignUp" class="btn btn-primary" />
+        </form>
+    </div>
+</div>

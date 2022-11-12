@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="jQuery" Version="3.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\BookReadingEvent.Core\BookReadingEvent.Core.csproj" />
+    <ProjectReference Include="..\..\..\PlugIn\BookReadingEvent.Loggig.NLog\BookReadingEvent.Loggig.NLog.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BookReadingEvent.Core">
+      <HintPath>..\..\..\Lib\Foundation\BookReadingEvent.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Core.AppServices">
+      <HintPath>..\..\..\Lib\Foundation\BookReadingEvent.Core.AppServices.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Core.Data">
+      <HintPath>..\..\..\Lib\Foundation\BookReadingEvent.Core.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Core.Domain">
+      <HintPath>..\..\..\Lib\Foundation\BookReadingEvent.Core.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(ProjectDir)\..\..\..\Lib\Business\&quot;" />
+  </Target>
+
+</Project>

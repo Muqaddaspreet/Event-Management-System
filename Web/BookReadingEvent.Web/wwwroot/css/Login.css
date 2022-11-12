@@ -1,0 +1,4 @@
+﻿.validate::after {
+    content: '*';
+    color: red;
+}

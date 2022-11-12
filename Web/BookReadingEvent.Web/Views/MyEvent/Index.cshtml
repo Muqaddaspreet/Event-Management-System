@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "_LayoutEvent";
+}
+@section Styles {
+    <link href="~/css/HomeView.css" rel="stylesheet" />
+}
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 1240px;">
+        <h3 class="display-4" style="text-align:center;">My Events</h3>
+        <div style="display:flex; gap:20px; flex-wrap: wrap;">
+            @if (ViewBag.MyEvents.Count != 0)
+            {
+
+
+                @foreach (var e in ViewBag.MyEvents)
+                {
+                    <a asp-action="Index" asp-controller="GetEvent" asp-route-id="@e.EventId" asp-route-name="MyEvent">
+                        <div class="card shadow es234CardWrapper" style="min-width: 200px; margin-bottom: 3px; float: left; margin-right: 3px; padding:12px;">
+
+                            <h5 class="card-title primaryClr">@e.Title</h5>
+                            <h6 class="card-subtitle mb-2 "><b>Description:-&nbsp;</b> @e.Description</h6>
+                            <h6 class="card-subtitle mb-2"><b>Date:-&nbsp;</b> @e.Date.ToShortDateString()</h6>
+                            <h6 class="card-subtitle mb-2 "><b>Duration:-&nbsp;</b> @e.Duration hrs</h6>
+                            <h6 class="card-subtitle mb-2"><b>Location:-&nbsp;</b> @e.Location</h6>
+                            <h6 class="card-subtitle mb-2"><b>Start Time:-&nbsp;</b> @e.StartTime</h6>
+                        </div>
+                    </a>
+                }
+            }
+            else
+            {
+                <h3 style="color: lightgray; text-align:center;">You have not created any event till now</h3>
+            }
+        </div>
+    </div>
+</div>

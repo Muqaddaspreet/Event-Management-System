@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> BookReadingEvent.Web</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+        <div class="container" style="background-color:whitesmoke; border-radius:3px;">
+            <a class="navbar-brand" asp-action="Index" asp-controller="Home" >
+                <img src="~/books-stack-of-three.svg"  style="width:50px;"/>
+            </a>
+            <span style="word-spacing:-2px;font-weight:700;">
+                Book Reading Event
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" asp-action="Index" asp-controller="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+
+                        @if (ViewBag.emailId == "myadmin@bookevents.com")
+                        {
+                            <a class="nav-link" asp-action="Index" asp-controller="Admin" style="word-spacing:-1px;">My Events</a>
+                        }
+
+                        else
+                        {
+                            <a class="nav-link" asp-action="Index" asp-controller="MyEvent" style="word-spacing:-1px;">My Events</a>
+                        }
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index" asp-controller="CreateEvent" style="word-spacing:-1px;">Create Events</a>
+                    </li>
+                    <li class="nav-item">
+                        @if (ViewBag.emailId == "myadmin@bookevents.com")
+                        {
+
+                        }
+                        else
+                        {
+                            <a class="nav-link " asp-action="Index" asp-controller="InvitedEvent" style="word-spacing:-1px;">Invited Events</a>
+                        }
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Show" asp-controller="Event" style="word-spacing:-1px;">Notifications</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display:flex; align-items:center; ">
+                <h6 style="margin-bottom: 0; margin-right: 8px; color:grey; ">Hello&nbsp; @ViewBag.emailId</h6>
+                <a asp-action="Logout" asp-controller="Event" class="btn btn-sm btn-primary" style="text-decoration:none; color:white;margin-top:3px;margin-right:3px;margin-bottom:2px;">LogOut</a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="border-top footer" style="background-color:darkslategray; color:ghostwhite;">
+        <div class="container" style="text-align:center;word-spacing:-1px;">
+            &copy;2022 Book Reading Event <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:cornsilk;">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

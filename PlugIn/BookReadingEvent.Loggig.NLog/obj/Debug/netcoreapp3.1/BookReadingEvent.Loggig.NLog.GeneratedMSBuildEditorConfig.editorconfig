@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = BookReadingEvent.Loggig.NLog
+build_property.ProjectDir = C:\Users\muqaddaspreetbhatia\Desktop\DesignPattern\BookReadingEvent\PlugIn\BookReadingEvent.Loggig.NLog\

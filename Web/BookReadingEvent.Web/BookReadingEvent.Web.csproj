@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>adabf655-c1d6-4d72-8210-8cb4f8d68874</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="jQuery" Version="3.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BookReadingEvent.Core">
+      <HintPath>..\..\Lib\Foundation\BookReadingEvent.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Core.AppServices">
+      <HintPath>..\..\Lib\Foundation\BookReadingEvent.Core.AppServices.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Core.Data">
+      <HintPath>..\..\Lib\Foundation\BookReadingEvent.Core.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Core.Domain">
+      <HintPath>..\..\Lib\Foundation\BookReadingEvent.Core.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.Loggig.NLog">
+      <HintPath>..\..\Lib\PlugIn\BookReadingEvent.Loggig.NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="BookReadingEvent.ProductDomain">
+      <HintPath>..\..\Lib\Business\BookReadingEvent.ProductDomain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\ProductDomain\BookReadingEvent.ProductDomain\BookReadingEvent.ProductDomain.csproj" />
+    <ProjectReference Include="..\..\Foundation\BookReadingEvent.Core.WebMVC\BookReadingEvent.Core.WebMVC.csproj" />
+    <ProjectReference Include="..\..\Foundation\BookReadingEvent.Core\BookReadingEvent.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\NewFolder\" />
+  </ItemGroup>
+
+
+
+</Project>

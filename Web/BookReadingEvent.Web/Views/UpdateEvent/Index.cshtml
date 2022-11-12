@@ -1,0 +1,89 @@
+﻿@model Event;
+@{
+
+    Layout = "_LayoutEvent";
+}
+@section Styles {
+    <link href="~/css/Update.css" rel="stylesheet" />
+    
+}
+<div class="outerdiv">
+    <div class="insidediv">
+        <div style="width:80%;margin-left:5%;">
+            <div>
+                <h3>Update Event </h3>
+                <hr />
+            </div>
+            @using (Html.BeginForm("Index", "UpdateEvent", FormMethod.Post))
+            {
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "fs-5 validate" })
+
+
+                    @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+
+                </div>
+
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "fs-5 validate" })
+
+                    @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control datepicker"} })
+                    @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+                </div>
+
+
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "fs-5 validate" })
+
+                    @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.StartTime, htmlAttributes: new { @class = "fs-5 validate" })
+
+                    @Html.EditorFor(model => model.StartTime, new { htmlAttributes = new { @class = "form-control timepicker " } })
+                </div>
+
+
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.Type, htmlAttributes: new { @class = "fs-5 validate" })
+
+                    <div>@Html.RadioButtonFor(model => model.Type, "public", new { htmlAttributes = new { @class = "form-control" } }) Public</div>
+                    <div>@Html.RadioButtonFor(model => model.Type, "private", new { htmlAttributes = new { @class = "form-control" } }) Private</div>
+
+                </div>
+
+
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.Duration, htmlAttributes: new { @class = "fs-5 validate" })
+                    @Html.EditorFor(model => model.Duration, new { htmlAttributes = new { @class = "form-control", @max = 4, @min = 0 } })
+                </div>
+
+                <div class="form-group mb-3">
+
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "fs-5 validate" })
+
+                    @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="row mb-5" style="margin-left:5px;" >
+                    <div>
+                        <button type="submit" class="btn btn-success fs-5 ps-5 pe-5 ">Update</button>
+                        <input type="reset" value="Clear" style="margin-left:10px;" class="btn btn-primary " />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+Scripts{ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/js/UpdateEvent.js"></script>
+}

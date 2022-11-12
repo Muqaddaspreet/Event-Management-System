@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Business\\ProductDomain\\BookReadingEvent.ProductDomain\\BookReadingEvent.ProductDomain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Business\\ProductDomain\\BookReadingEvent.ProductDomain\\BookReadingEvent.ProductDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Business\\ProductDomain\\BookReadingEvent.ProductDomain\\BookReadingEvent.ProductDomain.csproj",
+        "projectName": "BookReadingEvent.ProductDomain",
+        "projectPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Business\\ProductDomain\\BookReadingEvent.ProductDomain\\BookReadingEvent.ProductDomain.csproj",
+        "packagesPath": "C:\\Users\\muqaddaspreetbhatia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Business\\ProductDomain\\BookReadingEvent.ProductDomain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\muqaddaspreetbhatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Foundation\\BookReadingEvent.Core\\BookReadingEvent.Core.csproj": {
+                "projectPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Foundation\\BookReadingEvent.Core\\BookReadingEvent.Core.csproj"
+              },
+              "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\PlugIn\\BookReadingEvent.Loggig.NLog\\BookReadingEvent.Loggig.NLog.csproj": {
+                "projectPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\PlugIn\\BookReadingEvent.Loggig.NLog\\BookReadingEvent.Loggig.NLog.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Foundation\\BookReadingEvent.Core\\BookReadingEvent.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Foundation\\BookReadingEvent.Core\\BookReadingEvent.Core.csproj",
+        "projectName": "BookReadingEvent.Core",
+        "projectPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Foundation\\BookReadingEvent.Core\\BookReadingEvent.Core.csproj",
+        "packagesPath": "C:\\Users\\muqaddaspreetbhatia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\Foundation\\BookReadingEvent.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\muqaddaspreetbhatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\PlugIn\\BookReadingEvent.Loggig.NLog\\BookReadingEvent.Loggig.NLog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\PlugIn\\BookReadingEvent.Loggig.NLog\\BookReadingEvent.Loggig.NLog.csproj",
+        "projectName": "BookReadingEvent.Loggig.NLog",
+        "projectPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\PlugIn\\BookReadingEvent.Loggig.NLog\\BookReadingEvent.Loggig.NLog.csproj",
+        "packagesPath": "C:\\Users\\muqaddaspreetbhatia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muqaddaspreetbhatia\\Desktop\\DesignPattern\\BookReadingEvent\\PlugIn\\BookReadingEvent.Loggig.NLog\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\muqaddaspreetbhatia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
