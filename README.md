@@ -53,19 +53,6 @@ BookReadingEvent.sln
 ├─ README.md
 └─ (optional) Database scripts / seeders
 
-# 🔐 Roles & Permissions
-
-| Capability                      | Admin | User |
-|---------------------------------|:-----:|:----:|
-| Register / Login                |  ✅   |  ✅  |
-| Create event                    |  ✅   |  ✅  |
-| Edit own future events          |  ✅   |  ✅  |
-| Edit others’ future events      |  ✅   |  ❌  |
-| View event details (own/admin)  |  ✅   |  ✅  |
-| View all events (past/future)   |  ✅   |  ✅  |
-| See invited-only events         |  ✅   |  ✅  |
-| Send special invitations        |  ✅   |  ✅  |
-
 ```
 
 ## 🚀 Getting Started
