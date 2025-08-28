@@ -158,7 +158,7 @@ dotnet run --project Web/BookReadingEvent.Web
 ## 🪵 Logging
 
 - NLog lives under `PlugIn/BookReadingEvent.Logging.NLog`.  
-- Typical logs: request traces, errors, audits, and admin/user actions.  
+- Typical logs: request traces, errors, audits, and admin/user actions. 
 - Configure targets (file/console/db) in `NLog.config`.
 
 ---
