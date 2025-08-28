@@ -66,7 +66,7 @@ BookReadingEvent.sln
 | See invited-only events         |  ✅   |  ✅  |
 | Send special invitations        |  ✅   |  ✅  |
 
----
+```
 
 ## 🚀 Getting Started
 
@@ -91,8 +91,7 @@ Create or update `appsettings.json` (or `Web.config` for classic MVC) in `Web/Bo
     "LoginPath": "/Account/Login"
   }
 }
-
-# 📚 Book Reading Event Portal
+```
 
 ## 🔐 Roles & Permissions
 
