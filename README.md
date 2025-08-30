@@ -1,6 +1,6 @@
 # 📚 Event Portal
 
-A role-based event management web app for organizing and discovering book-reading events. Admins and Users can register, sign in, create/edit events, and browse past/future sessions. Creators can optionally send **special invitations** to select users.
+A role-based event management web app for organizing and discovering events. Admins and Users can register, sign in, create/edit events, and browse past/future sessions. Creators can optionally send **special invitations** to select users.
 
 ---
 
